@@ -1,0 +1,12 @@
+{% extends "shared/layout.j2" %} 
+{% block title %}Emergency Block Status{% endblock %} 
+{% block main_content %}
+<h1>Emergency Block Status</h1>
+<p>Emergency Block Status is: <b>{{content.status}}</b></p>
+
+<form method="post">
+<input type="radio" name="state" value="lock">Lockdown <br />
+<input type="radio" name="state" value="unlock">Unlock <br />
+<input type="submit" value="submit">
+</form>
+{% endblock %}

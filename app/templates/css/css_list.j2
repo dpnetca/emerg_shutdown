@@ -1,0 +1,14 @@
+{% extends "shared/layout.j2" %} 
+{% block title %}CSS List{% endblock %} 
+{% block main_content %}
+<h1>CSS List</h1>
+  <ol>    
+{% for css in content %}
+    <li>
+      name: <a href="/css/{{css.name}}">{{css.name}}</a>
+      <br />
+      uuid: <a href="/css/{{css.uuid}}">{{css.uuid}}</a>
+    </li>
+{% endfor %}
+  </ol>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends "shared/layout.j2" %} 
+{% block title %}Emergency Block Status{% endblock %} 
+{% block main_content %}
+<h1>Emergency Block Status</h1>
+CSS Name: {{content.name}}<br />
+Blocked: {{content.pstn_blocked}}<br />
+{% endblock %}
